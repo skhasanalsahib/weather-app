@@ -7,7 +7,7 @@ const Navbar = () => {
     <nav className={`${styles.nav} container`}>
       {/* Site Logo */}
       <div>
-        <img src={siteLogo} alt="Weather Logo" />
+        <img src={siteLogo} className={styles.logo} alt="Weather Logo" />
       </div>
 
       {/* Unit Selector */}

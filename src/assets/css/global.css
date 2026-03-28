@@ -1,10 +1,7 @@
 @font-face {
   font-family: "DM Sans";
-  src:
-    url("../fonts/DM_Sans/DMSans-Italic-VariableFont_opsz\,wght.ttf")
-      format("truetype"),
-    url("../fonts/DM_Sans/DMSans-VariableFont_opsz\,wght.ttf")
-      format("truetype");
+  src: url("../fonts/DM_Sans/DMSans-VariableFont_opsz\,wght.ttf")
+    format("truetype");
   font-weight: 300 700;
   font-display: swap;
 }
@@ -51,13 +48,14 @@
   --fs-heading: 3.2rem;
 
   --fc-primary: var(--Neutral-0);
+  --fc-mute: var(--Neutral-300);
 
   /* Breakpoints */
   --brkp-mobile: 37.5rem;
 
   /* box-model */
   --max-w: 1440px;
-  --container-padding: 0 11rem;
+  --container-padding: 0 1.6rem;
 }
 
 html {
@@ -67,6 +65,7 @@ html {
 body {
   font-family: var(--font-body);
   font-size: var(--fs-body);
+  font-style: normal;
   color: var(--fc-primary);
   background-color: var(--primary-color);
 }
@@ -84,8 +83,22 @@ body {
   padding: var(--container-padding);
 }
 
-@media screen and (max-width: 37.5rem) {
+/* Focus Outline */
+
+:focus-visible {
+  outline: 2px solid var(--Neutral-0);
+  outline-offset: 3px;
+}
+
+/* Dropdowns */
+.dropdown {
+  background-color: var(--Neutral-800);
+  border-radius: 14px;
+  border: 1px solid var(--Neutral-600);
+}
+
+@media screen and (min-width: 375px) {
   :root {
-    --container-padding: 0 1.6rem;
+    --container-padding: 0 11rem;
   }
 }

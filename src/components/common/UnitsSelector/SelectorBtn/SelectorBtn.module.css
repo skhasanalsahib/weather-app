@@ -1,0 +1,30 @@
+.wrapper {
+  border-radius: 8px;
+  display: flex;
+  font-size: 1.6rem;
+  justify-content: space-between;
+  align-items: center;
+  padding: 12px 8px;
+}
+
+.wrapper:hover {
+  cursor: pointer;
+  background-color: var(--Neutral-700);
+}
+
+.selectorBtn {
+  background-color: transparent;
+  border: none;
+  color: var(--fc-primary);
+  font-family: var(--fs-body);
+  font-size: 1.6rem;
+  outline: none;
+}
+
+.selectorBtn:focus {
+  outline: none;
+}
+
+.selectorBtn:hover {
+  cursor: pointer;
+}

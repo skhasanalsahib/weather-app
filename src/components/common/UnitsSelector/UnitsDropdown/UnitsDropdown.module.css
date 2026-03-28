@@ -1,0 +1,18 @@
+.unitsDropdown {
+  width: 214px;
+  top: 110%;
+  right: 0;
+  padding: 6px;
+  position: absolute;
+}
+
+.label {
+  color: var(--fc-mute);
+  font-size: 1.4rem;
+  padding: 6px;
+}
+
+.label:nth-child(n + 3) {
+  border-top: 1px solid var(--Neutral-600);
+  margin-top: 4px;
+}
